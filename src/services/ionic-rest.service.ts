@@ -23,6 +23,12 @@ export class IonicRestService {
     );
   }
 
+  // addStudent(student: Student): Observable<any> {
+  //   return this.http
+  //     .post<Student>(`${URL}/`, student, this.httpHeader)
+  //     .pipe(catchError(this.handleError<Student>('Add Student')));
+  // }
+
   // promises
   async fetchPosts(): Promise<any> {
     let request = this.httpClient.get(this.Post_URL).pipe(take(2));
